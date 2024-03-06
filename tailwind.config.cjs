@@ -2,7 +2,13 @@
 module.exports ={
   mode: 'jit',
   content: ["./*.{html,js}", "./resources/**/*.js"],
-  purge:['./resources/**/*.{js,jsx,ts,tsx}','./index.html'],
+  safelist:[
+    'flex', 
+    'flex-col', 
+    'place-items-center',
+    'min-w-80', 
+    'min-h-screen'
+  ],
   theme: {
     extend: {},
   },
