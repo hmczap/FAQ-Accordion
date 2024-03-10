@@ -1,14 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports ={
   mode: 'jit',
-  content: ["./*.{html,js}", "./resources/**/*.js"],
-  safelist:[
-    'flex', 
-    'flex-col', 
-    'place-items-center',
-    'min-w-80', 
-    'min-h-screen'
-  ],
+  content: ["./*.{html,js}", "./**/*.{html,js}","./resources/**/*.js"],
+  purge:['./resources/**/*.{js,jsx,ts,tsx}','./index.html'],
   theme: {
     extend: {},
   },
