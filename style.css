@@ -603,6 +603,10 @@ video {
   padding-right: 0.125rem;
 }
 
+.font-work-sans {
+  font-family: Work-Sans, sans-serif;
+}
+
 .font-medium {
   font-weight: 500;
 }
