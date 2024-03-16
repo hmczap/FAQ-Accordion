@@ -20,7 +20,7 @@ module.exports ={
       },
       spacing: {
         '58': '14.5rem'
-      }
+      },
     },
     screens: {
       mobile: {'max': '375px'}
