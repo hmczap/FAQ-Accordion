@@ -544,6 +544,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.accordion {
+  padding: 18px 0px;
+  text-align: left;
+  transition: 0.4s;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .absolute {
   position: absolute;
 }
@@ -570,10 +582,6 @@ video {
 
 .mt-32 {
   margin-top: 8rem;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {

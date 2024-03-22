@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+    .accordion {
+        padding: 18px 0px;
+        text-align: left;
+        transition: 0.4s;
+    }
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+}
+
 /*
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
