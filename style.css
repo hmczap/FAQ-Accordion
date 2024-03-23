@@ -556,8 +556,16 @@ video {
   transition: max-height 0.2s ease-out;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .z-0 {
@@ -572,6 +580,11 @@ video {
   margin: 0px;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -584,12 +597,36 @@ video {
   margin-top: 8rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .min-h-80 {
@@ -600,12 +637,40 @@ video {
   min-height: 100vh;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
+.w-128 {
+  width: calc(1440px * 0.4);
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .min-w-max {
@@ -613,8 +678,32 @@ video {
   min-width: max-content;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .self-center {
@@ -663,6 +752,11 @@ video {
 
 .font-work-sans {
   font-family: Work-Sans, sans-serif;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-medium {
@@ -781,6 +875,10 @@ video {
 
 */
 
+.hover\:w-11\/12:hover {
+  width: 91.666667%;
+}
+
 .hover\:text-indigo-600:hover {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
@@ -789,6 +887,14 @@ video {
 @media (max-width: 375px) {
   .mobile\:min-h-58 {
     min-height: 14.5rem;
+  }
+
+  .mobile\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .mobile\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .mobile\:bg-body-mobile {

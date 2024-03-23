@@ -21,6 +21,9 @@ module.exports ={
       spacing: {
         '58': '14.5rem'
       },
+      width: {
+        '128': 'calc(1440px * 0.4)'
+      },
     },
     screens: {
       mobile: {'max': '375px'}
