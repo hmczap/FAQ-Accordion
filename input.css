@@ -5,7 +5,7 @@
 
 @layer components {
     .accordion {
-        padding: 18px 0px;
+        /*margin: 10px 0px;*/
         text-align: left;
         transition: 0.4s;
     }
@@ -13,6 +13,9 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        color: hsl(292, 16%, 49%);
+        font-size: 15px;
+        /*margin-top: 18px;*/
     }
 
 }

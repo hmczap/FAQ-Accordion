@@ -11,8 +11,10 @@ function toggleAccordion(){
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
         panel.style.maxHeight = null;
+        panel.style.marginTop = "0px";
     } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.marginTop = "18px";
     }
 }
 
