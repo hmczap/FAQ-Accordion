@@ -565,7 +565,8 @@ video {
 }
 
 .expand {
-  width: 30px;
+  max-width: 20px;
+  max-height: 20px;
   margin: 10px 0px;
 }
 
@@ -641,6 +642,10 @@ video {
   height: auto;
 }
 
+.max-h-5 {
+  max-height: 1.25rem;
+}
+
 .min-h-80 {
   min-height: 20rem;
 }
@@ -664,6 +669,10 @@ video {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
 }
 
 .flex-col {
