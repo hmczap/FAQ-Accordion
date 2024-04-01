@@ -564,6 +564,11 @@ video {
   color: hsl(292, 42%, 14%);
 }
 
+.accordion h2:hover {
+  color: #ad28eb;
+  transition: color ease-in-out 0.1s;
+}
+
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -616,10 +621,6 @@ video {
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -736,21 +737,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-work-sans {
   font-family: Work Sans, sans-serif;
 }
 
 .text-\[56px\] {
   font-size: 56px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -764,10 +756,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .leading-none {
@@ -784,6 +772,11 @@ video {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
+.text-grayish-purple {
+  --tw-text-opacity: 1;
+  color: hsl(292 16% 49% / var(--tw-text-opacity));
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -793,6 +786,11 @@ video {
 .hover\:text-indigo-600:hover {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#ad28eb\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(173 40 235 / var(--tw-text-opacity));
 }
 
 @media (max-width: 375px) {

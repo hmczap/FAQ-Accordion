@@ -21,6 +21,10 @@
         line-height: 1.75rem;
         color: hsl(292, 42%, 14%);
     }
+    .accordion h2:hover {
+        color: #ad28eb;
+        transition: color ease-in-out 0.1s;
+    }
     .panel {
         max-height: 0;
         overflow: hidden;
