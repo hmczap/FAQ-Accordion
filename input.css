@@ -4,22 +4,27 @@
 
 @layer components {
     .accordion {
-        /*margin: 10px 0px;*/
         text-align: left;
         transition: 0.4s;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /*min-width: fit-content;
-        min-height: fit-content;*/
         width: 100%;
-        /*height: 100%;*/
+
+        @media (max-width: theme('screens.mobile.max')) {
+          gap: 15px;
+        }
     }
     .accordion h2 {
         font-weight: 600;
         font-size: 1.125rem;
         line-height: 1.75rem;
         color: hsl(292, 42%, 14%);
+
+        @media (max-width: theme('screens.mobile.max')) {
+          font-size: 1rem;
+          line-height: 1.25;
+        }
     }
     .accordion h2:hover {
         color: #ad28eb;
@@ -31,11 +36,14 @@
         transition: max-height 0.2s ease-out;
         color: hsl(292, 16%, 49%);
         font-size: 16px;
+
+        @media (max-width: theme('screens.mobile.max')){
+          font-size: 14px;
+        }
     }
     .accordion div.expand {
       max-width: 30px;
       max-height: 30px;
       min-width: 30px;
-      /*margin: 10px 0px;*/
     }
 }

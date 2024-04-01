@@ -545,16 +545,15 @@ video {
 }
 
 .accordion {
-  /*margin: 10px 0px;*/
   text-align: left;
   transition: 0.4s;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*min-width: fit-content;
-        min-height: fit-content;*/
   width: 100%;
-  /*height: 100%;*/
+  @media (max-width: 375px) {
+    gap: 15px;
+  }
 }
 
 .accordion h2 {
@@ -562,6 +561,11 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: hsl(292, 42%, 14%);
+  @media (max-width: 375px) {
+    font-size: 1rem;
+
+    line-height: 1.25;
+  }
 }
 
 .accordion h2:hover {
@@ -575,13 +579,15 @@ video {
   transition: max-height 0.2s ease-out;
   color: hsl(292, 16%, 49%);
   font-size: 16px;
+  @media (max-width: 375px){
+    font-size: 14px;
+  }
 }
 
 .accordion div.expand {
   max-width: 30px;
   max-height: 30px;
   min-width: 30px;
-  /*margin: 10px 0px;*/
 }
 
 .z-0 {
@@ -767,11 +773,6 @@ video {
   color: hsl(292 42% 14% / var(--tw-text-opacity));
 }
 
-.text-indigo-500 {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
 .text-grayish-purple {
   --tw-text-opacity: 1;
   color: hsl(292 16% 49% / var(--tw-text-opacity));
@@ -783,17 +784,25 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:text-indigo-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#ad28eb\]:hover {
   --tw-text-opacity: 1;
   color: rgb(173 40 235 / var(--tw-text-opacity));
 }
 
 @media (max-width: 375px) {
+  .mobile\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .mobile\:-mt-\[108px\] {
+    margin-top: -108px;
+  }
+
+  .mobile\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .mobile\:min-h-58 {
     min-height: 14.5rem;
   }
@@ -802,12 +811,33 @@ video {
     width: 83.333333%;
   }
 
+  .mobile\:w-\[86\%\] {
+    width: 86%;
+  }
+
+  .mobile\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
   .mobile\:bg-body-mobile {
     background-image: url('./resources/images/background-pattern-mobile.svg');
   }
+
+  .mobile\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .mobile\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
-@media (min-width: 375px) and (max-width: 800px) {
+@media (min-width: 376px) and (max-width: 800px) {
+  .small\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .small\:w-9\/12 {
     width: 75%;
   }

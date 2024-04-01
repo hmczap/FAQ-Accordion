@@ -33,7 +33,7 @@ module.exports ={
     screens: {
       mobile: {'max': '375px'},
       small: {'max': '800px',
-              'min': '375px'}
+              'min': '376px'}
     },
   },
   plugins: [],
