@@ -21,7 +21,7 @@ module.exports ={
         'dark-purple' : "hsl(292, 42%, 14%)"
       },
       fontFamily: {
-        'work-sans': ["Work-Sans", "sans-serif"]
+        'work-sans': ["Work Sans", "sans-serif"]
       },
       spacing: {
         '58': '14.5rem'

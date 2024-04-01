@@ -17,7 +17,7 @@ function toggleAccordion(){
         icon.alt = "minus icon";
     } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.marginTop = "18px";
+        panel.style.marginTop = "20px";
 
         icon.src = "./resources/images/icon-minus.svg";
         icon.alt = "plus icon";
