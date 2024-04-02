@@ -11,6 +11,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -46,3 +47,6 @@ Users should be able to:
 
 - Frontend Mentor - [@hmczap](https://www.frontendmentor.io/profile/hmczap)
 
+## Acknowledgments
+
+- [Skill-icons](https://github.com/tandpfun/skill-icons) - An awesome repo I used to add the skills icons above!
